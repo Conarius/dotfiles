@@ -7,7 +7,7 @@ fi
 
 export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 
-export PATH=$HOME/bin:/usr/local/bin:$HOME/.cargo/bin/:$HOME/.local/share/gem/ruby/3.0.0/bin/:$HOME/.mix/archives/:/home/linuxbrew/.linuxbrew/bin/:/home/conarius/.local/share/gem/ruby/3.0.0/bin/:/home/conarius/.local/bin/:$HOME/.spicetify/:$HOME/go/bin:$PYENV_ROOT/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.cargo/bin/:$HOME/.local/share/gem/ruby/3.0.0/bin/:$HOME/.mix/archives/:/home/linuxbrew/.linuxbrew/bin/:$HOME/.local/share/gem/ruby/3.0.0/bin/:$HOME/.local/bin/:$HOME/.spicetify/:$HOME/go/bin:$PYENV_ROOT/bin:$PATH
 
 
 
@@ -133,6 +133,6 @@ alias cbr='git branch --sort=-committerdate | fzf --header "Checkout Recent Bran
 alias v='fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim'
 alias scapy='python -m scapy'
 
-[ -f "/home/conarius/.ghcup/env" ] && source "/home/conarius/.ghcup/env"
+[ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env"
 
 tmux send-keys "fastfetch" Enter
